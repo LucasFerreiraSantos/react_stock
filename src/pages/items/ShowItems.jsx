@@ -1,7 +1,7 @@
 export default function ListItems(){
     return (
         <>
-            <h2>Todos os itens</h2>
+            <h2>Mostrar os itens</h2>
         </>
     )
 }
