@@ -1,6 +1,8 @@
-export default StockContext = createContext({})
 import PropsType from "prop-types"
 import { useState } from "react"
+import { createContext } from "react"
+
+export const StockContext = createContext({})
 
 StockContextProvider.prototype = {
     children: PropsType.node
@@ -32,8 +34,8 @@ export function StockContextProvider({ children }){
     }
 
     return (
-        <StockContext.provider value={stock}>
+        <StockContext.Provider value={stock}>
             {children}
-        </StockContext.provider>
+        </StockContext.Provider>
     )
 }
